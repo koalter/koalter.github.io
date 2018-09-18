@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Motivarte Sitio Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+	<header>
+        
+		<h1><img src="../img/camara.svg" class="icon"> Fotografía<strong style="color: #40bc80">ME</strong></h1>
+		<nav>
+			<ul>
+				<a href="..">INICIO</a>
+				<a href="../Servicios">SERVICIOS</a>
+                <a href="../Tarifas">TARIFAS</a>
+                <a href="../Contacto">CONTACTO</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="contacto">
+            <h2>Contacto</h2>
+            <form action="codigo.php" method="post">
+				<label><h3>Nombre</h3>
+					<input type="text" name="nombre" placeholder="Juan Pérez" required>
+				</label>
+				<br>
+				<label><h3>Edad</h3>
+					<input type="number" name="edad" min=18 max=90 required>
+				</label>
+				<br>
+				<label><h3>Email</h3>
+					<input type="email" name="email" placeholder="info@miweb.com" required>
+				</label>
+				<br>
+				<label><h3>Origen</h3>
+					<select>
+						<option value="A">Sector A</option>
+						<option value="B">Sector B</option>
+						<option value="C">Sector C</option>
+					</select>
+				</label>
+				<br>
+				<label><h3>Comentarios</h3>
+					<textarea cols="30" rows="5" name="consulta"></textarea>
+				</label>
+				<br>
+				<label><h3>Estado Civil</h3>
+					<label>Casado
+						<input type="radio" name="estadoCivil">
+					</label>
+					<label>Soltero
+							<input type="radio" name="estadoCivil" checked>
+					</label>
+				</label>
+				<br>
+				<label>Acepta Términos y Condiciones <input type="checkbox" required></label>
+				<br>
+				<input type="submit" id="submit" placeholder="Enviar">
+			</form>
+        </section>
+	</main>
+	<footer>
+		<p>2018 Copyright | <a href="mailto:someone@example.com">Contacto!</a></p>
+	</footer>
+</body>
+</html>

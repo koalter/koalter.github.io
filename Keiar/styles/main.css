@@ -1,0 +1,186 @@
+/* General rules */
+
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header, footer 
+{
+    background-color: pink;
+}
+
+h1, h2 
+{
+    color: hotpink;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header img, main img, footer img 
+{
+    width: 100%;
+}
+
+/* Header rules */
+
+header
+{
+    display: flex;
+	justify-content: space-around;
+}
+
+nav
+{
+	display: flex;
+	align-items: center;
+}
+nav a
+{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-left: 1em;
+	margin-right: 1em;
+	height: 100%;
+	text-decoration: none;
+	color: hotpink;
+  transition: 150ms;
+}
+nav a:hover
+{
+	border-bottom: 0.5em solid white;
+	color: white;
+	
+}
+
+/* Body rules */
+
+#ads
+{
+	position: relative;
+  min-height: 50vw;
+}
+
+.item
+{
+  max-height: 100%;
+  position: absolute;
+}
+#first
+{
+  z-index: 1;
+}
+
+.bullets
+{
+  display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
+	z-index: 2;
+}
+
+.button 
+{
+  height: 1em;
+  width: 1em;
+  margin: 0.5em;
+  background-color: darkslategrey;
+  border-radius: 100%;
+  transition: background-color 400ms;
+}
+
+.active, .button:hover 
+{
+  cursor: pointer;
+  background-color: HotPink;
+}
+
+.row 
+{
+  display: flex;
+}
+
+.category 
+{
+  margin: auto;
+  width: 40%;
+}
+.category p 
+{
+  margin-top: 0;
+}
+
+/* Footer rules */
+
+footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media 
+{
+  display: flex;
+}
+.social-media a 
+{
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* SECCION NOVEDADES */
+
+.news-box {
+  display: flex;
+  border: medium solid HotPink;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.news-box img {
+  width: auto;
+  height: 150px;
+  padding-right: 1em;
+}
+
+/* SECCION CONTACTO */
+
+form {
+  border: medium solid HotPink;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 2em auto;
+  width: 30em;
+}
+
+form div {
+  padding: 5px;
+}
+
+form label {
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+}
+
+form input {
+  width: 20em;
+}
+
+form textarea {
+  width: 20em;
+  height: 10em;
+  color: rgba(0, 0, 0, 0.6);
+  vertical-align: top;
+}
+
+form button {
+  display: block;
+  margin: 1em auto;
+}

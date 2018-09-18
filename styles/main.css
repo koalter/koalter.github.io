@@ -1,0 +1,119 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/fondo(1).jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Cabin, Verdana, sans-serif;
+}
+.top
+{
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 2px 4px black;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.about
+{
+    background-color: white;
+    font-size: 24px;
+    color: grey;
+    padding-right: 1em;
+    padding-left: 1em;
+    align-items: center;
+}
+.about img
+{
+    height: 360px;
+    width: 360px;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+.about div
+{
+    text-align: right;
+}
+.projects
+{
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.projects h2
+{
+    color: white;
+    text-shadow: 3px 2px 4px black;
+}
+.projects a
+{
+    text-decoration: none;
+    color: darkslategrey;
+}
+.projects p
+{
+    color: grey;
+}
+.projects article
+{
+    display: flex;
+    border: 1px dashed black;
+    border-radius: 5px;
+    margin: 2em;
+}
+.projects article img
+{
+    max-height: 169px;
+}
+.projects article div
+{ 
+    margin: 1em;
+}
+.box
+{
+	margin: auto;
+}
+.box article
+{
+    background-color: white;
+}
+
+main em, main strong
+{
+    color: darkslategrey;
+}
+section
+{
+	display: flex;
+    min-height: 100vh;
+    height: 100%;
+}
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: darkslategrey;
+    padding: 16px;
+}
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+/* BACKGROUNDS */
+.white
+{
+    background-color: white;
+}
+.transparent
+{
+    background-color: rgba(0,0,0,0.7);
+}

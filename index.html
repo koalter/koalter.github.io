@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lorenzo Cea</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="top transparent">
+            <img src="img/cara.svg" alt="" class="foto">
+            <h1>Bienvenido a mi página!</h1>
+            <p>Mi nombre es Lorenzo, y te voy a guiar a través de mi sitio web para que me conozcas mejor.</p>
+        </section>
+        <section class="about white">
+            <img src="img/plaza.jpg">
+            <div>
+                <p>Nací y viví toda mi vida en Buenos Aires. Siempre le tuve una atracción a las computadoras, pero no fue hasta finales de 2016 que le encontré el gusto a escribir código y desarrollar contenido digital.</p>
+
+                <p>Así empecé este camino por medio de <em>Codecademy.com</em> dando mis primeros pasos en diseño web y programación.</p>
+        
+                <p>En febrero de este año ingresé a la <strong>Universidad Tecnológica Nacional</strong> para la carrera de <strong>Técnico Superior en Programación</strong>, y de esta manera poder especializarme formalmente.</p>
+        
+                <p>Durante el transcurso de la cursada aprendí mucho más acerca de cómo programar, tanto en <strong><em>Javascript</em></strong> como en <strong><em>C</em></strong>, y en el mes de julio la empresa <strong>Accenture</strong> me dió la oportunidad de capacitarme en su programa <strong>Accademy .NET</strong>, donde vi más a fondo cómo hacer aplicaciones web, programar en <strong><em>C#</em></strong> usando el framework .NET, crear bases de datos y hacer consultas usando <strong><em>SQL</em></strong>, y <strong><em>trabajar en equipo</em></strong> eficientemente.</p>
+            </div>
+            
+        </section>
+        <section class="projects transparent">
+            <h2>Mis trabajos y diseños</h2>
+            <div class="box">
+                <article class="white">
+                    <img src="img/keiar_thumbnail.jpg" class="thumbnail">
+                    <div>
+                    <h3><a href="Keiar" target="_blank">Keiar</a></h3>
+                    <p>La temática es de un negocio de cosméticos. Incluye un slider que cambia las imágenes que se muestran. La página la hice toda por mi cuenta, con todos los conocimientos que adquirí por mí mismo.</p>
+                    </div>
+                </article>
+                <article class="white">
+                    <img src="img/fotografiame_thumbnail.jpg" class="thumbnail">
+                    <div>
+                    <h3><a href="FotografiaME" target="_blank">FotografiaME</a></h3>
+                    <p>Es un sitio web con temática de servicios fotográficos. Contiene 4 secciones y un formulario funcional para enviar comentarios.</p>
+                    </div>
+                </article>
+                <article class="white">
+                    <img src="img/garlic_thumbnail.jpg" class="thumbnail">
+                    <div>
+                    <h3><a href="Garlic" target="_blank">Garlic Jr.</a></h3>
+                    <p>Es otra página que sigue el modelo de sitios web que realizo. Ésta va dirigida a un servicio de catering y delivery. El logotipo utilizado fue hecho por mí con aplicaciones de diseño.</p>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="datos">
+            <h2>Datos de Contacto</h2>
+            <h3>Teléfono</h3>
+            <p>(+54 9) 11-5045-7964</p>
+            <h3>e-mail</h3>
+            <p>lorenzo.cea.ko@gmail.com</p>
+            <h3>Github</h3>
+            <a href="https://github.com/koalter">https://github.com/koalter</a>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/lorenzoceako/">https://www.linkedin.com/in/lorenzoceako/</a>
+        </div>
+
+        <form action="mensaje.php" method="post">
+            <label for="telefono">Teléfono</label><br>
+            <input type="text" name="telefono" id="telefono" placeholder="Ingrese un nro. de teléfono" required><br><br>
+            <label for="mail">Dirección de Email</label><br>
+            <input type="mail" name="mail" id="mail" placeholder="sudireccion@ejemplo.com" required><br><br>
+            <label for="mensaje">Deje su mensaje</label><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aquí..."></textarea><br><br>
+            <input type="submit" name="submit">
+        </form>
+    </footer>
+</body>
+</html>

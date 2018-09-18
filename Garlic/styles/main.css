@@ -1,0 +1,155 @@
+/* General rules */
+
+html, body 
+{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header, footer 
+{
+  background-color: yellowgreen;
+}
+
+h1, h2 
+{
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header rules */
+
+#logo
+{
+  height: 150px;
+  padding: 5px;
+}
+
+header
+{
+  display: flex;
+	justify-content: space-around;
+}
+
+nav
+{
+	display: flex;
+	align-items: center;
+}
+nav a
+{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-left: 1em;
+  margin-right: 1em;
+	text-decoration: none;
+	color: inherit;
+  transition: 150ms;
+}
+nav a:hover
+{
+	color: white;	
+}
+
+/* Body rules */
+
+main
+{
+  margin-left: 16px;
+  margin-right: 16px;
+  min-height: 60vh;
+}
+
+.fotos
+{
+  display: flex;
+  justify-content: space-around;
+}
+.fotos img
+{
+  height: 300px;
+  margin: 1em;
+}
+
+.menu
+{
+  display: flex;
+  border: 1px dotted yellowgreen;
+  margin: 1em;
+}
+.menu img
+{
+  height: 200px;
+}
+
+/* Footer rules */
+
+footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media 
+{
+  display: flex;
+}
+.social-media a 
+{
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* SECCION NOVEDADES */
+
+.news-box {
+  display: flex;
+  border: medium solid HotPink;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.news-box img {
+  width: auto;
+  height: 150px;
+  padding-right: 1em;
+}
+
+/* SECCION CONTACTO */
+
+form {
+  border: medium solid HotPink;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 2em auto;
+  width: 30em;
+}
+
+form div {
+  padding: 5px;
+}
+
+form label {
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+}
+
+form input {
+  width: 20em;
+}
+
+form textarea {
+  width: 20em;
+  height: 10em;
+  color: rgba(0, 0, 0, 0.6);
+  vertical-align: top;
+}
+
+form button {
+  display: block;
+  margin: 1em auto;
+}

@@ -1,0 +1,76 @@
+html
+{ 
+	font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+main
+{
+    padding: 10px;
+}
+table
+{
+    border: 1px dashed black;
+}
+td, th
+{
+    border: 1px solid white;
+    background-color: #40bc80;
+}
+img
+{
+    margin: 2px;
+}
+h1, h3
+{
+    display: flex;
+    align-items: center;
+}
+nav
+{
+	background-color: #40bc80;
+    text-align: center;
+    padding: 12px;
+}
+a
+{
+	color: white;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+footer
+{
+	padding: 24px;
+    text-align: center;
+	background-color: rgb(40,40,40);
+	color: white;
+}
+
+.icon
+{
+    height: 32px;
+}
+
+#servicios p, div
+{
+    text-align: center;
+}
+#submit
+{
+    font-family: Cabin, sans-serif;
+    color: white;
+    background-color: #40bc80;
+    text-align: center;
+    padding: 8px;
+    width: 224px;
+    border: 1px dashed grey;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
