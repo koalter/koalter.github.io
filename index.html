@@ -6,27 +6,42 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
 <body>
+    <header class="transparent">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
     <main>
         <section class="top transparent">
-            <img src="img/cara.svg" alt="" class="foto">
+            <img src="img/cara.svg" class="foto">
             <h1>Bienvenido a mi página!</h1>
             <p>Mi nombre es Lorenzo, y te voy a guiar a través de mi sitio web para que me conozcas mejor.</p>
         </section>
-        <section class="about white">
-            <img src="img/plaza.jpg">
-            <div>
-                <p>Nací y viví toda mi vida en Buenos Aires. Siempre le tuve una atracción a las computadoras, pero no fue hasta finales de 2016 que le encontré el gusto a escribir código y desarrollar contenido digital.</p>
 
-                <p>Así empecé este camino por medio de <em>Codecademy.com</em> dando mis primeros pasos en diseño web y programación.</p>
-        
-                <p>En febrero de este año ingresé a la <strong>Universidad Tecnológica Nacional</strong> para la carrera de <strong>Técnico Superior en Programación</strong>, y de esta manera poder especializarme formalmente.</p>
-        
-                <p>Durante el transcurso de la cursada aprendí mucho más acerca de cómo programar, tanto en <strong><em>Javascript</em></strong> como en <strong><em>C</em></strong>, y en el mes de julio la empresa <strong>Accenture</strong> me dió la oportunidad de capacitarme en su programa <strong>Accademy .NET</strong>, donde vi más a fondo cómo hacer aplicaciones web, programar en <strong><em>C#</em></strong> usando el framework .NET, crear bases de datos y hacer consultas usando <strong><em>SQL</em></strong>, y <strong><em>trabajar en equipo</em></strong> eficientemente.</p>
-            </div>
+        <section id="about" class="white">
+            <h1>Sobre mí</h1>
+            <article>
+                <img src="img/plaza.jpg">
+                <div>
+                    <p>Nací y viví toda mi vida en Buenos Aires. Siempre le tuve una atracción a las computadoras, pero no fue hasta finales de 2016 que le encontré el gusto a escribir código y desarrollar contenido digital.</p>
+    
+                    <p>Así empecé este camino por medio de <em>Codecademy.com</em> dando mis primeros pasos en diseño web y programación.</p>
+            
+                    <p>En febrero de este año ingresé a la <strong>Universidad Tecnológica Nacional</strong> para la carrera de <strong>Técnico Superior en Programación</strong>, y de esta manera poder especializarme formalmente.</p>
+            
+                    <p>Durante el transcurso de la cursada aprendí mucho más acerca de cómo programar, tanto en <strong><em>Javascript</em></strong> como en <strong><em>C</em></strong>, y en el mes de julio la empresa <strong>Accenture</strong> me dió la oportunidad de capacitarme en su programa <strong>Accademy .NET</strong>, donde vi más a fondo cómo hacer aplicaciones web, programar en <strong><em>C#</em></strong> usando el framework .NET, crear bases de datos y hacer consultas usando <strong><em>SQL</em></strong>, y <strong><em>trabajar en equipo</em></strong> eficientemente.</p>
+                </div>
+            </article>
             
         </section>
-        <section class="projects transparent">
-            <h2>Mis trabajos y diseños</h2>
+
+        <section id="projects" class="transparent">
+            <h1>Mis trabajos y diseños</h1>
             <div class="box">
                 <article class="white">
                     <img src="img/keiar_thumbnail.jpg" class="thumbnail">
@@ -50,10 +65,30 @@
                     </div>
                 </article>
             </div>
-            
+        </section>
+
+        <section id="servicios" class="white">
+            <h1>Servicios</h1>
+            <div>
+                <article>
+                    <img class="icono" src="img/web.svg">
+                    <h2>Diseño web</h2>
+                    <p>Hago diseños y aplicaciones web para páginas personales, blogs, comerciales y profesionales.</p>
+                </article>
+                <article>
+                    <img class="icono" src="img/app.svg">
+                    <h2>Desarrollo de aplicaciones</h2>
+                    <p>Me enfoco en hacer aplicaciones de escritorio para Windows, utilizando las tecnologías más nuevas y populares.</p>
+                </article>
+                <article>
+                    <img class="icono" src="img/tech.svg">
+                    <h2>Soporte técnico</h2>
+                    <p>Soluciones a los problemas más frecuentes que experimentan los usuarios. Limpieza de disco, formateo, instalación de aplicaciones, antivirus y antimalware.</p>
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer id="contacto">
         <div class="datos">
             <h2>Datos de Contacto</h2>
             <h3>Teléfono</h3>
