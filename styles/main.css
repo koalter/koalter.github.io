@@ -16,6 +16,10 @@ body
     flex-direction: column;
     justify-content: center;
 }
+.foto
+{
+    height: 13rem;
+}
 #about
 {
     background-color: white;
@@ -109,7 +113,7 @@ body
 {
     display: flex;
     align-self: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto;
 }
 #servicios div article
