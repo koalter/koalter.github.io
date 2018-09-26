@@ -79,7 +79,7 @@ body
     border-radius: 5px;
     margin: 2em;
 }
-#projects article img
+.thumbnail
 {
     max-height: 169px;
 }
