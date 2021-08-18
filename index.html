@@ -1,129 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lorenzo Cea</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.min.css">
+    <script src="https://kit.fontawesome.com/85e16c3fb7.js" crossorigin="anonymous"></script>
+    <script src="./assets/workItems.js"></script>
+    <script src="./assets/projectsItems.js"></script>
+    <title>Lorenzo Nahuel Cea Ko</title>
 </head>
 <body>
-    <header class="transparent">
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#about">Sobre mi</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
+    <header>
+        <i id="hamburger" class="fas fa-bars"></i>
+        <nav id="nav">
+          <li><a onclick="closeModal()" href="#about">About</a></li>
+          <li><a onclick="closeModal()" href="#work">Work</a></li>
+          <li><a onclick="closeModal()" href="#projects">Projects</a></li>
+          <li><a onclick="closeModal()" href="#contact">Contact</a></li>
         </nav>
-    </header>
-
-    <main>
-        <section class="top transparent">
-            <img src="img/cara.svg" class="foto">
-            <h1>Bienvenido a mi página!</h1>
-            <p>Mi nombre es Lorenzo, y te voy a guiar a través de mi sitio web para que me conozcas mejor.</p>
+      </header>
+      <main>
+        <section id="front-page" class="odd">
+          <h1><span id="owner"></span></h1>
+          <h2>Web Developer</h2>
         </section>
-
-        <section id="about" class="white">
-            <h1>Sobre mí</h1>
-            <article>
-                <img src="img/plaza.jpg">
-                <div>
-                    <p>Nací y viví toda mi vida en Buenos Aires. Siempre le tuve una atracción a las computadoras, pero no fue hasta finales de 2016 que le encontré el gusto a escribir código y desarrollar contenido digital.</p>
-    
-                    <p>Así empecé este camino por medio de <em>Codecademy.com</em> dando mis primeros pasos en diseño web y programación.</p>
-            
-                    <p>En febrero de este año ingresé a la <strong>Universidad Tecnológica Nacional</strong> para la carrera de <strong>Técnico Superior en Programación</strong>, y de esta manera poder especializarme formalmente.</p>
-            
-                    <p>Durante el transcurso de la cursada aprendí mucho más acerca de cómo programar, tanto en <strong><em>Javascript</em></strong> como en <strong><em>C</em></strong>, y en el mes de julio la empresa <strong>Accenture</strong> me dió la oportunidad de capacitarme en su programa <strong>Accademy .NET</strong>, donde vi más a fondo cómo hacer aplicaciones web, programar en <strong><em>C#</em></strong> usando el framework .NET, crear bases de datos y hacer consultas usando <strong><em>SQL</em></strong>, y <strong><em>trabajar en equipo</em></strong> eficientemente.</p>
-                </div>
-            </article>
-            
+        <section id="about" class="odd">
+          <img id="profile-picture" src="https://lh3.googleusercontent.com/0Z-11EwELWMg51_194BLTOe9abXQhfiY3lVLKAawPpelogvaLPqiL0ny4yzUPBBBvVL6u6HJxfhLRCaH7ta5p4xz5MEyIn9V9lT_v5_M-cieWWoEPbrvIYit4WJIDOueZPuJntdMVSzkPBxDjHM6ItslNYmeEKTQRk1rMJm8vCgruK1QWiXBj8q4Nl8qI-K4k9QX1p3ETnB0hlukkikCfbfSRVyqtbQzoAXKncXnDvqj9vxoJUMQc85YevBtUtfCqlpInKsOuEdCLyk0xxzZdfEJmLr2A2oad7CtEJuRS2gAbp2_ratZgN5n58aOvUFR6jEQH_rh-Dx9LwU03Vxtz4VnA_HzpDhcstVy6Xaz2n4cIeRPRQJ27_g6fWBPbHbwUlQps1WdCN6qghsreffgwEXNlo0GoQsalXnh6IyxZxWuPfMv11x_Swz9WUFkACPywBm6uCTwymFCDzBF7TRiE8EoZn0ld7zmdVt-QFF6FXmLrK1nJZknJpiXQU4RxAY7zPp4bKwIHpGqlRSbJA66QlCJ3wVM6AVMS1vKHgBRCy22XAqJr4nMxclEOvGuxjcVOhQIVBl000CgUpupPhxiyQpw7aa_D0wfgUrNuub4Tokd6fy3ZzBM13vlSksVF19fwHT8oMopBpu31iPTrcK6pZ1guSJgUtB2FUwD3afS2GfjGnOxUF5XvWdA-pp5kek3n6piPaohn26es53_XP-_yj0=s554-no?authuser=0" alt="profile">
+          <h2>About Me</h2>
+          <p>Hi! My name is <span id="first-name"></span>. I’m a software developer from Argentina.</p>
+          <p>I have several years of experience in both front-end and back-end technologies. I've been employed in IT companies such as Accenture and Hexacta.</p>
+          <p>I'm looking to work abroad. Down below you can check my portfolio. My contact info is also available if you want to chat about work or advisory</p>
         </section>
-
-        <section id="projects" class="transparent">
-            <h1>Mis trabajos y diseños</h1>
-            <div class="box">
-                <article class="white">
-                    <img src="img/keiar_thumbnail.jpg" class="thumbnail">
-                    <div>
-                    <h3><a href="Keiar" target="_blank">Keiar</a></h3>
-                    <p>La temática es de un negocio de cosméticos. Incluye un slider que cambia las imágenes que se muestran. La página la hice toda por mi cuenta, con todos los conocimientos que adquirí por mí mismo.</p>
-                    </div>
-                </article>
-                <article class="white">
-                    <img src="img/tetris_thumbnail.jpg" class="thumbnail">
-                    <div>
-                    <h3><a href="Tetris" target="_blank">JavaScript Tetris</a></h3>
-                    <p>Una recreación fiel del clásico juego. Está hecho a JavaScript limpio, sin uso de frameworks.</p>
-                    </div>
-                </article>
-                <article class="white">
-                    <img src="img/fotografiame_thumbnail.jpg" class="thumbnail">
-                    <div>
-                    <h3><a href="FotografiaME" target="_blank">FotografiaME</a></h3>
-                    <p>Es un sitio web con temática de servicios fotográficos. Contiene 4 secciones y un formulario funcional para enviar comentarios.</p>
-                    </div>
-                </article>
-                <article class="white">
-                    <img src="img/garlic_thumbnail.jpg" class="thumbnail">
-                    <div>
-                    <h3><a href="Garlic" target="_blank">Garlic Jr.</a></h3>
-                    <p>Es otra página que sigue el modelo de sitios web que realizo. Ésta va dirigida a un servicio de catering y delivery. El logotipo utilizado fue hecho por mí con aplicaciones de diseño.</p>
-                    </div>
-                </article>
-                <article class="white">
-                    <img src="img/pixelart_thumbnail.jpg" class="thumbnail">
-                    <div>
-                    <h3><a href="PixelArt" target="_blank">Pixel Art</a></h3>
-                    <p>Pequeña aplicación en el cual podras crear obras artísticas al estilo 8-bits</p>
-                    </div>
-                </article>
+        <section id="work" class="even">
+          <h2>Work I Do</h2>
+          <div id="work-container">
+          </div>
+          <div id="work-arrows" class="arrows">
+            <button id="work-left-arrow" class="left-arrow" href="">&#171;</button>
+            <button id="work-right-arrow" class="right-arrow" href="">&#187;</button>
+          </div>
+        </section>
+        <section id="projects" class="odd">
+          <h2>Projects</h2>
+          <a id="projects-container" target="_blank" rel="noopener noreferrer">
+          </a>
+          <div id="projects-arrows" class="arrows">
+            <button id="projects-left-arrow" class="left-arrow" href="">&#171;</button>
+            <div id="dot-container">
             </div>
+            <button id="projects-right-arrow" class="right-arrow" href="">&#187;</button>
+          </div>
         </section>
-
-        <section id="servicios" class="white">
-            <h1>Servicios</h1>
-            <div>
-                <article>
-                    <img class="icono" src="img/web.svg">
-                    <h2>Diseño web</h2>
-                    <p>Hago diseños y aplicaciones web para páginas personales, blogs, comerciales y profesionales.</p>
-                </article>
-                <article>
-                    <img class="icono" src="img/app.svg">
-                    <h2>Desarrollo de aplicaciones</h2>
-                    <p>Me enfoco en hacer aplicaciones de escritorio para Windows, utilizando las tecnologías más nuevas y populares.</p>
-                </article>
-                <article>
-                    <img class="icono" src="img/tech.svg">
-                    <h2>Soporte técnico</h2>
-                    <p>Soluciones a los problemas más frecuentes que experimentan los usuarios. Limpieza de disco, formateo, instalación de aplicaciones, antivirus y antimalware.</p>
-                </article>
-            </div>
+        <section id="contact" class="even">
+          <h2>Contact me</h2>
+          <div id="info">
+            <a><i class="fab fa-whatsapp"></i> +54 9 11 XXXX XXXX</a>
+            <a href="mailto:example@gmail.com" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i> mypersonalemail@gmail.com</a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> /myusername</a>
+            <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> /myusername</a>
+          </div>
+          <i id="btn-contact" class="fas fa-chevron-down"></i>
         </section>
-    </main>
-    <footer id="contacto">
-        <div class="datos">
-            <h2>Datos de Contacto</h2>
-            <h3>Teléfono</h3>
-            <p>(+54 9) 11-6474-6499</p>
-            <h3>e-mail</h3>
-            <p>lorenzo.cea.ko@gmail.com</p>
-            <h3>Github</h3>
-            <a href="https://github.com/koalter">https://github.com/koalter</a>
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/lorenzoceako/">https://www.linkedin.com/in/lorenzoceako/</a>
-        </div>
+        <section id="contact-b" class="odd">
+          <form id="form" action="./scripts/mail.php">
+            <input type="text" name="name" id="name" placeholder="your name">
+            <input type="text" name="phone" id="phone" placeholder="phone number">
+            <input type="email" name="mail" id="mail" placeholder="e-mail address">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="message..."></textarea>
+            <input class="btn-submit orange-bg" type="submit" value="send">
+          </form>
+        </section>
+      </main>
 
-        <form action="mensaje.php" method="post">
-            <label for="telefono">Teléfono</label><br>
-            <input type="text" name="telefono" id="telefono" placeholder="Ingrese un nro. de teléfono" required><br><br>
-            <label for="mail">Dirección de Email</label><br>
-            <input type="mail" name="mail" id="mail" placeholder="sudireccion@ejemplo.com" required><br><br>
-            <label for="mensaje">Deje su mensaje</label><br>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aquí..."></textarea><br><br>
-            <input type="submit" name="submit">
-        </form>
-    </footer>
+      <script src="./scripts/main.js"></script>
 </body>
 </html>
