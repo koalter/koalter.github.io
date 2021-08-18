@@ -11,9 +11,9 @@ document.getElementById('owner').innerText = owner;
 document.getElementById('first-name').innerText = owner.split(' ')[0];
 
 // Event handler for the form
-form.addEventListener('submit', e => {
-  alert(`Message sent!`);
-});
+// form.addEventListener('submit', e => {
+//   alert(`Message sent!`);
+// });
 
 // Event handler for contact button
 document.getElementById('btn-contact').addEventListener('click', () => {
