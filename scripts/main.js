@@ -172,6 +172,7 @@ function InitializeProjectsSection() {
     dotContainer.children[index].classList.add('orange-bg');
   });
   
+  // Handlers for the dots
   for (let i = 0; i < dotContainer.children.length; i++) {
     //console.log(dotContainer.children[i])
     dotContainer.children[i].addEventListener('click', () => {
@@ -180,6 +181,7 @@ function InitializeProjectsSection() {
         item.classList.remove('orange-bg');
       }
       index = i;
+      projectsContainer.href = projectsItems[index].url;
       projectsContainer.children[index].classList.remove('hidden');
       dotContainer.children[i].classList.add('orange-bg');
     });

@@ -19,7 +19,7 @@ let projectsItems = [
   },
   {
     title: "Garlic",
-    description: "Basic template for a 3-page website. No frameworks used (logo done by me)",
+    description: "Basic template for a 3-page website. Usage of DOM manipulation with Javascript. No frameworks used (logo done by me)",
     icon: "../assets/garlic_thumbnail.jpg",
     url: "../projects/Garlic"
   },
