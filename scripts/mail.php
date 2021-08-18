@@ -9,3 +9,5 @@
     $body = "Has recibido un nuevo mensaje! \n Nombre: $name \n Teléfono: $phone \n Email: $from \n Mensaje: $message";
 
     mail($to,$subject,$message,$headers);
+    echo "Mensaje enviado!";
+?>
