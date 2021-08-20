@@ -7,7 +7,7 @@ let workItems = [
   {
     title: "Back-end",
     description: "• Design and development of APIs \n• Experience with .NET Framework, .NET Core and NodeJS \n• Management of business logic",
-    icon: "fab fa-python"
+    icon: "fab fa-node-js"
   },
   {
     title: "Databases",
