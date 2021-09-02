@@ -92,6 +92,11 @@ textarea {
   display: none;
 }
 
+#fiverr-icon {
+  height: 2em;
+  color: $secondary-color;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -324,12 +329,23 @@ header {
 
   #front-page {
     div {
+      display: none;
       flex-direction: column;
       align-items: center;
 
       .button {
         margin-top: 2em;
       }
+    }
+  }
+
+  #about {
+    line-height: 1em;
+  }
+
+  #work {
+    #work-container {
+      height: 70%;
     }
   }
 }

@@ -10,11 +10,6 @@ let message = document.getElementById('message');
 document.getElementById('owner').innerText = owner;
 document.getElementById('first-name').innerText = owner.split(' ')[0];
 
-// Event handler for the form
-// form.addEventListener('submit', e => {
-//   alert(`Message sent!`);
-// });
-
 // Event handler for contact button
 document.getElementById('btn-contact').addEventListener('click', () => {
   document.getElementById('contact-b').scrollIntoView();
@@ -174,7 +169,6 @@ function InitializeProjectsSection() {
   
   // Handlers for the dots
   for (let i = 0; i < dotContainer.children.length; i++) {
-    //console.log(dotContainer.children[i])
     dotContainer.children[i].addEventListener('click', () => {
       projectsContainer.children[index].classList.add('hidden');
       for (item of dotContainer.children) {
