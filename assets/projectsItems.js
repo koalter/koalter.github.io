@@ -6,6 +6,12 @@ let projectsItems = [
     url: "https://ardol.netlify.app"
   },
   {
+    title: "Santapiña",
+    description: "First website done for a client. \nDone in Wordpress. \nIncludes a slider, mail form and Whatsapp plugin.",
+    icon: "../assets/santapina_thumbnail.jpg",
+    url: "https://www.santapina.com"
+  },
+  {
     title: "Tetris",
     description: "Recreation done with vanilla Javascript and Canvas API. Move the pieces using the arrow keys. \n(WARNING: Contains sound)",
     icon: "../assets/tetris_thumbnail.jpg",
